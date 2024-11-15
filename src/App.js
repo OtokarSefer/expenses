@@ -17,8 +17,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <ExpenseItem data={expenses[0]}/>
-      <ExpenseItem data={expenses[1]}/>
+      <div class="expenses">
+        <ExpenseItem data={expenses[0]}/>
+        <ExpenseItem data={expenses[1]}/>
+      </div>
     </div>
   )
 }
