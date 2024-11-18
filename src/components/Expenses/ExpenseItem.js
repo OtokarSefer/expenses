@@ -4,7 +4,7 @@ import ExpenseDate from './ExpenseDate'
 import { useState } from 'react'
 
 const ExpenseItem = (props) => {
-    const [title, setTitle] = useState(props.expenseData.title)
+    const [title, setTitle] = useState(props.expenseDate.title)
 
     const clickHandler = () => {
         console.log('Ouch!');
@@ -13,10 +13,10 @@ const ExpenseItem = (props) => {
         }
     return (
         <Card className='expense-item'>
-            <ExpenseDate date={props.expenseData.date}/>
+            <ExpenseDate date={props.expenseDate.date}/>
             <div className='expense-item__description'>
-                <h2>{props.expenseData.title}</h2>
-                <div className='expense-item__price'>{props.expenseData.price}</div>
+                <h2>{props.expenseDate.title}</h2>
+                <div className='expense-item__price'>{props.expenseDate.price}</div>
             </div>
             <button onClick={clickHandler}>Dont Click Me</button>
         </Card>
