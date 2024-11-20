@@ -4,9 +4,9 @@ import expenseDate from '../Expenses/ExpenseDate';
 
 const ExpenseForm = (props) => {
     const [userInput, setuserInput] = useState({
-        enteredTitle: '',
-        enteredPrice: '',
-        enteredDate: ''
+        enteredTitle: " ",
+        enteredPrice: " ",
+        enteredDate: " "
     });
 
     const titleChangeHandler = (event) => {
